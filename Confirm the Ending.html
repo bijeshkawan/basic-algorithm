@@ -1,0 +1,35 @@
+<script>
+
+
+    function confirmEnding(str, target) {
+
+        var x = str.split(' ');
+
+        if (x.length > 1) {
+
+            if (x[x.length - 1].includes(target)) {
+                return true;
+            }
+            else {
+                return false;
+            }
+
+
+        }
+        else if (x.length==1)
+        {
+            x=str.split('');
+            if (x[x.length - 1] === target) {
+                return true;
+            }
+            else {
+                return false;
+            }
+
+        }
+    }
+
+    confirmEnding("Open sesame", "same");
+
+
+</script>
